@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family: Arial, sans-serif;
+    padding-top: 100px;
+}
+
+
+/* ===== Common Section Base Style ===== */
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    scroll-margin-top: 120px;
+    /* navbar offset for anchor links */
+    width: 100%;
+}
+
+/* ===== Home Section ===== */
+.home {
+    height: 100vh;
+    font-size: large;
+    
+}
+
+.home .black_pagoda img {
+    height: 200px;
+    width: 200px;
+    margin: 70 auto 10px auto;
+    display: block;
+}
+
+.home-content p {
+    font-size: 35px;
+    color: #000;
+    text-align: center;
+    text-shadow: 0px 0px 10px rgb(99, 97, 94),
+        0px 0px 20px rgb(222, 220, 218);
+    padding: 10px;
+}
+
+#myanmar{
+    
+    font-size: 43px;
+}
+
+/* ===== About Section ===== */
+.about {
+    min-height: 80vh;
+    font-size: 22px;
+    padding: 50px 5%;
+    gap: 70px;
+}
+
+.about h2 {
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.about p {
+    line-height: 2;
+}
+
+/* ===== Gallery Section ===== */
+.gallery {
+    min-height: 80vh;
+    font-size: 22px;
+    padding: 50px 5%;
+    gap: 70px;
+}
+
+.gallery-intro h3 {
+    font-size: 28px;
+    padding-bottom: 30px;
+}
+
+.gallery button {
+    background-color: black;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.gallery button:hover {
+    transform: scale(1.1);
+}
+
+.explore-button a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* ===== History Section ===== */
+.history {
+    min-height: 80vh;
+    font-size: 22px;
+    padding: 50px 5%;
+    gap: 70px;
+}
+
+.history-intro h3 {
+    font-size: 28px;
+    padding-bottom: 30px;
+}
+
+.history button {
+    background-color: black;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.history button:hover {
+    transform: scale(1.1);
+}
+
+/* ===== Typing Animation (optional area) ===== */
+#type-area {
+    white-space: pre-line;
+    overflow: hidden;
+    display: inline-block;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* ===== Footer ===== */
+footer {
+    width: 100%;
+    background-color: #000;
+    text-align: center;
+    padding: 50px;
+}
+
+footer h2 {
+    color: #fefefe;
+    margin: 10px 0;
+}
+
+.sns-icons img {
+    vertical-align: middle;
+    margin: 20px;
+}
