@@ -133,18 +133,19 @@ function updateArrows(carousel, prevBtn, nextBtn) {
 // Start
 loadSliders();
 
-function showImage(src) {
-  const modal = document.getElementById("modal");
-  const modalImg = document.getElementById("modal-img");
-  modal.style.display = "flex"; // flex ဖြင့် center align
-  modalImg.src = src;
-  document.body.classList.add("modal-open");
-}
+// function showImage(src) {
 
-function closeModal() {
-  const modal = document.getElementById("modal");
-  modal.style.display = "none";
-  document.body.classList.remove("modal-open");
-}
+//   const modal = document.getElementById("modal");
+//   const modalImg = document.getElementById("modal-img");
+//   modal.style.display = "flex"; // flex ဖြင့် center align
+//   modalImg.src = src;
+//   document.body.classList.add("modal-open");
+// }
 
-img.addEventListener('click', () => showImage(src));
+// function closeModal() {
+//   const modal = document.getElementById("modal");
+//   modal.style.display = "none";
+//   document.body.classList.remove("modal-open");
+// }
+
+// img.addEventListener('click', () => showImage(src));
