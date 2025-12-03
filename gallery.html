@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/gallery.css">
-    
+
     <title>GALLERY</title>
 </head>
 
@@ -13,10 +13,18 @@
     <main>
 
         <!-- JS will generate all sections here -->
+
         <div id="sliders-container"></div>
 
+        <!-- Modal for image zoom -->
+        <div id="modal" class="modal">
+            <span id="modal-close" class="modal-close">✕</span>
+            <img id="modal-img" class="modal-img">
+        </div>
+
+
     </main>
-    <script src="main.js"></script>
+    <script src="gallery.js"></script>
 </body>
 
 </html>
