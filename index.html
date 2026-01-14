@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../style/navi.css">
   <link rel="stylesheet" href="../style/main.css">
-  
+
   <title>Thukuma Online Gallery</title>
 </head>
 
@@ -20,12 +20,14 @@
         <a href="#about">ABOUT</a>
         <a href="#gallery">GALLERY</a>
         <a href="#history">HISTORY</a>
-    
+
       </nav>
     </div>
   </header>
 
   <main>
+
+    <!--Home Section-->
     <section class="home" id="home">
 
       <div class="black_pagoda">
@@ -39,6 +41,7 @@
 
     </section>
 
+    <!--About Section-->
     <section class="about" id="about">
 
       <div class="about-intro">
@@ -56,6 +59,7 @@
 
     </section>
 
+    <!--Gallery Section-->
     <section class="gallery" id="gallery">
       <div class="gallery-intro">
         <h3>十の伝統芸術「パンセミョー」というのは？</h3>
@@ -67,6 +71,7 @@
       </div>
     </section>
 
+    <!--History Section-->
     <section class="history" id="history">
 
       <div class="history-intro">
@@ -79,7 +84,25 @@
       </div>
     </section>
 
-    
+    <!-- Floating message icon -->
+    <div class="suggestion-box" id="openBox">
+      <img src="https://cdn-icons-png.flaticon.com/512/2462/2462719.png" alt="message">
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Comment box (center) -->
+    <div class="comment-form" id="commentForm">
+      <div class="comment-header">
+        <span>Send us a message</span>
+        <span class="close-btn" id="closeBox">✕</span>
+      </div>
+
+      <textarea id="message" placeholder="Write your message..."></textarea>
+      <button id="sendBtn">Send</button>
+    </div>
+
   </main>
 
   <footer>
@@ -91,6 +114,7 @@
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   <script src="main.js"></script>
 </body>
 

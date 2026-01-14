@@ -28,5 +28,56 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+// EmailJS init
+(function () {
+  emailjs.init("c_feF_stZTkUYBuDP"); // your public key
+})();
+
+const openBox = document.getElementById("openBox");
+const commentForm = document.getElementById("commentForm");
+const overlay = document.getElementById("overlay");
+const closeBox = document.getElementById("closeBox");
+const sendBtn = document.getElementById("sendBtn");
+
+// open comment box
+openBox.addEventListener("click", () => {
+  commentForm.style.display = "block";
+  overlay.style.display = "block";
+  openBox.style.display = "none";
+});
+
+// close comment box
+closeBox.addEventListener("click", closeForm);
+overlay.addEventListener("click", closeForm);
+
+function closeForm() {
+  commentForm.style.display = "none";
+  overlay.style.display = "none";
+  openBox.style.display = "flex";
+}
+
+// send email
+sendBtn.addEventListener("click", () => {
+  const msg = document.getElementById("message").value;
+
+  if (!msg.trim()) {
+    alert("Please write a message");
+    return;
+  }
+
+  emailjs.send("service_j556i6k", "template_s526grf", {
+    message: msg
+  })
+  .then(() => {
+    alert("Message sent successfully!");
+    document.getElementById("message").value = "";
+    closeForm();
+  })
+  .catch(err => {
+    alert("Failed to send message");
+    console.error(err);
+  });
+});
+
 
 
